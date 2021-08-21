@@ -3,6 +3,6 @@ class Produto():
         self.nome = nome
         self.valor = val
         self.quantidade = qtd
-    def atualizaProduto(self, val, qtd):
-        self.valor = val
+    def atualizaQuantidade(self, qtd):
         self.quantidade = qtd
+        print("nova quantidade:", qtd)

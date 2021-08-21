@@ -13,7 +13,7 @@ class CarrinhoCompra:
         for prodCarrinho in self.carrinho:
             for prodEstoque in self.estoque.listaProdutos:
                 if prodEstoque.nome == prodCarrinho.nome:
-                    prodEstoque.atualizaProduto(-prodCarrinho.quantidade)
+                    prodEstoque.atualizaQuantidade(-prodCarrinho.quantidade)
 
     def calculaTotal(self):
         total = 0
